@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.IO;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace RatchetTests
@@ -16,7 +17,8 @@ namespace RatchetTests
         [TestMethod]
         public void ReadWarningsFromInputStream_FilterOutKnownWarningsAndErrorOnUnknown()
         {
-            ProcessStartInfo pInfo = new ProcessStartInfo("ratchet.exe");
+            string pathToExecutable = Path.Combine(System.Environment.CurrentDirectory, @"..\..\ratchet\bin\debug\ratchet.exe");
+            ProcessStartInfo pInfo = new ProcessStartInfo(pathToExecutable);
             pInfo.WorkingDirectory = System.Environment.CurrentDirectory;
             pInfo.UseShellExecute = false;
             pInfo.RedirectStandardInput = true;

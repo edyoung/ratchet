@@ -1,5 +1,6 @@
 # git ignore file
 bin/
 obj/
+TestResults/
 *.suo
-*.ncrunchsolution.user
+*.user
