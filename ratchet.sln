@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ratchet", "ratchet.csproj", "{79A4A5E4-173C-4071-AD73-3E1205CDABCD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RatchetTests", "..\..\ratchet\RatchetTests\RatchetTests.csproj", "{0D7B9060-002E-47FC-B9D6-7DDB19133194}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RatchetTests", "RatchetTests\RatchetTests.csproj", "{0D7B9060-002E-47FC-B9D6-7DDB19133194}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
