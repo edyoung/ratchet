@@ -17,7 +17,8 @@ namespace RatchetTests
         [TestMethod]
         public void ReadWarningsFromInputStream_FilterOutKnownWarningsAndErrorOnUnknown()
         {
-            string pathToExecutable = Path.Combine(System.Environment.CurrentDirectory, @"..\..\ratchet\bin\debug\ratchet.exe");
+            File.WriteAllText(".ratchet",KnownWarning);
+            string pathToExecutable = Path.Combine(System.Environment.CurrentDirectory, @"..\..\..\bin\debug\ratchet.exe");
             ProcessStartInfo pInfo = new ProcessStartInfo(pathToExecutable);
             pInfo.WorkingDirectory = System.Environment.CurrentDirectory;
             pInfo.UseShellExecute = false;
