@@ -35,4 +35,10 @@ namespace RatchetTests
             Assert.AreEqual(UnknownWarning, errors);
         }
     }
+
+    [TestClass]
+    public class ConfigurationTests
+    {
+        
+    }
 }
